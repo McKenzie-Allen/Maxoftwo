@@ -1,3 +1,4 @@
+const { Console } = require('console');
 const readline = require('readline');
 
 const reader = readline.createInterface({
@@ -14,19 +15,23 @@ reader.question("What would you like to calculate?", function(input) {
     num1 = Number(tokens[1]);
     num2 = Number(tokens[2]);
     if (mathSymbol === "+") {
-        console.log("addidtion")
+        console.log("Addidtion")
         console.log(num1 + num2);
     }
     if (mathSymbol === "-") {
+        Console.lot("Subtraction")
         console.log(num1 - num2);
     }
     if (mathSymbol === "/") {
+        console.log("division")
         console.log(num1 / num2);
     }
     if (mathSymbol === "*") {
+        console.log("Mutiplication")
         console.log(num1 * num2);
     }
     if (mathSymbol === "sqrt") {
+        console.log("Square Root")
         console.log(Math.sqrt(num1))
     }
 
